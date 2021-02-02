@@ -1,8 +1,44 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+</head>
+
+<body>
+    <header >
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <br /><br />
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 text-center" style="background: #141414;">
+                        <p style="color: #fff; font-size: 45pt; margin-bottom: 0px;">
+                            <span id="timer_segundos">00</span>                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+        var cronometro_id = 0;      
+            var timer_segundos = document.getElementById("timer_segundos");      
+            var s = 0;
+            cronometro_id = setInterval(function () {
+                timer_segundos.innerHTML = s;
+                if (s < 100) {s+=1}
+            }, 100);
+
+
+                
+
+       
+
+      
+
+    </script>
+</body>
+</html>
